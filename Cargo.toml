@@ -1,0 +1,14 @@
+[package]
+name = "stockpc"
+version = "0.1.0"
+edition = "2021"
+description = "stock price checker in CLI"
+authors = ["th 2022"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "*", features = ["derive"] }
+chrono = "*"
+scraper = "*"
+reqwest = { version = "*", features = ["blocking"] }
